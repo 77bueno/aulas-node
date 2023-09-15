@@ -3,11 +3,15 @@ import express from "express";
 // Armazenando o express em uma variável. Ao invés de chamar express().get, usaremos app.get;
 const app = express();
 
+// Configurar a view engine com EJS
+app.set("view engine", "ejs")
+
 // Configurar as rotas de acesso
 
 // Raíz
 app.get("/", (req, res) => {
-    res.send("Bem Vindo ao servidor ExpressJs. Foi mais fácil do que parecia!")
+    // res.send("Bem Vindo ao servidor ExpressJs. Foi mais fácil do que parecia!")
+    res.render("paginas/index");
 });
 
 
