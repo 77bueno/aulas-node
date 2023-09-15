@@ -14,6 +14,13 @@ app.get("/", (req, res) => {
     res.render("paginas/index");
 });
 
+app.get("/sobre", (req, res) => {
+    res.render("paginas/sobre");
+});
+
+app.get("/contato", (req, res) => {
+    res.render("paginas/contato");
+});
 
 // Iniciar o servidor e escolher a porta
 app.listen(3000, () => {
