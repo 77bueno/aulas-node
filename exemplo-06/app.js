@@ -7,7 +7,7 @@ const app = express();
 
 // Raíz
 app.get("/", (req, res) => {
-    res.send("Bem Vindo ao servidor ExpressJs!")
+    res.send("Bem Vindo ao servidor ExpressJs. Foi mais fácil do que parecia!")
 });
 
 
