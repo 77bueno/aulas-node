@@ -1,0 +1,12 @@
+{
+  "type": "module",
+  "name": "exemplo-06",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": " "
+  },
+  "author": "Bueno",
+  "license": "ISC"
+}
