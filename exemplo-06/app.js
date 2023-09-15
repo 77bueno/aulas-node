@@ -11,7 +11,9 @@ app.set("view engine", "ejs")
 // Raíz
 app.get("/", (req, res) => {
     // res.send("Bem Vindo ao servidor ExpressJs. Foi mais fácil do que parecia!")
-    res.render("paginas/index");
+    
+    const bandas = ["Justin Bieber", "Calypso", "Titãs", "Ozzy"]
+    res.render("paginas/index", {bandas});
 });
 
 app.get("/sobre", (req, res) => {
